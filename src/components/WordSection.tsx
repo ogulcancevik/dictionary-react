@@ -1,7 +1,7 @@
 const WordSection = ({ data } : {
   data: any
 }) => {
-  return (
+  if (data.length) return (
     <div className="flex flex-col gap-3">
       <div className="flex items-center gap-5">
         <span className="font-mono font-bold text-xl dark:text-white">Noun</span>
@@ -25,6 +25,7 @@ const WordSection = ({ data } : {
       </ul>
     </div>
   )
+  return null
 }
 
 export default WordSection

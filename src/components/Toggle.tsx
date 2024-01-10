@@ -5,13 +5,12 @@ const Toggle = () => {
 
   const changeTheme = (checked : boolean) => {
     setChecked(checked)
-    const root = document.querySelector('#root')
     if (checked) {
       document.body.classList.add('dark')
-      root?.classList.add('dark:bg-[#050505]')
+      document.body.classList.add('bg-[#121212]')
     } else {
       document.body.classList.remove('dark')
-      root?.classList.remove('dark:bg-[#050505]')
+      document.body.classList.remove('bg-[#121212]')
     }
     localStorage.setItem('theme', checked ? 'dark' : 'light')
   }

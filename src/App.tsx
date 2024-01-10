@@ -23,7 +23,7 @@ const App = () => {
     <div className="container mx-auto lg:pt-6 pt-16 px-[28%] xl:px-[20%] lg:px-12 md:!px-6 sm:!px-3 flex flex-col gap-6">
       <Header />
       <Search searchWord={searchWord} />
-      {dictionary.length > 0 ? <DictionaryContext.Provider value={dictionary}>
+      {dictionary.length ? <DictionaryContext.Provider value={dictionary}>
         <PhoneticSection />
         <WordSection data={getData('noun')} />
         <WordSection data={getData('verb')} />

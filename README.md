@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+# Dictionary App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application is a dictionary app that uses the DictionaryAPI to display the meanings and uses of words. It is developed using React.js, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You must meet the following requirements to use this project:
 
-## Expanding the ESLint configuration
+- Node.js 16 or higher
+- NPM or Yarn
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the project to your computer or download it as a ZIP file.
+2. Go to the project folder and run the following command:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+   ```
+   npm install
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   or
+
+   ```
+   yarn
+   ```
+
+## Usage
+
+1. In the project folder, run the following command:
+
+   ```
+   npm dev
+   ```
+
+   or
+
+   ```
+   yarn dev
+   ```
+
+2. Go to `http://localhost:5173` in your browser.
+3. Search for a word.
+4. Click play button to listen the pronunciation of the word.
+5. See the nouns and verbs of the word.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more information.
+
+## Contact
+
+If you have any questions or feedback, please send an email to hello@ogulcancevik.com

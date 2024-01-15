@@ -8,7 +8,7 @@ const PlayButton = ({ phonetics }: { phonetics: IPhonetic[] }) => {
   }
   const audio = getAudio(phonetics)
   const playAudio =  async () => {
-    if (!audio) return
+    if (!audio || isPlaying) return
     const audioElement = new Audio(audio.audio)
     setIsPlaying(true)
     await audioElement.play()
